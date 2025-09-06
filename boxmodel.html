@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Box Model & Positioning</title>
+    <link rel="stylesheet" href="boxmodel.css" />
+  </head>
+  <body>
+    <h2>Box Model Demo</h2>
+    <div class="box">Kedarnath</div>
+
+    <h2>Positioning Demo</h2>
+    <div class="containerized">
+      <div class="box static">Static</div>
+      <div class="box relative">Relative</div>
+      <div class="box fixed">Fixed</div>
+      <div class="box sticky">Sticky</div>
+    </div>
+
+    <div class="box absolute">Absolute</div>
+
+    <p style="height: 100px">
+      Scroll down to see how <strong>fixed</strong> and
+      <strong>sticky</strong> behave.
+    </p>
+
+    <div class="outermost" style="height: 100px">
+      outermost
+      <div class="innerbox1">
+        innerbox1
+        <div class="innerbox2">
+          innerbox2
+          <div class="innerbox3">innerbox 3</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

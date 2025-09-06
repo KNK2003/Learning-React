@@ -1,0 +1,81 @@
+/* --- Box Model --- */
+.box {
+  width: 200px;
+  padding: 20px;
+  border: 3px solid black;
+  margin: 15px;
+  background-color: lightblue;
+}
+
+/* --- Positioning --- */
+.containerized {
+  position: relative;
+  border: 2px dashed gray;
+  height: 300px;
+  margin-bottom: 40px;
+}
+
+.static {
+  position: static;
+  background-color: lightgreen;
+}
+
+.relative {
+  position: relative;
+  top: 20px;
+  left: 30px;
+  background-color: lightcoral;
+}
+
+.absolute {
+  position: absolute;
+  top: 250px;
+  left: 100px;
+  background-color: lightgoldenrodyellow;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: lightpink;
+}
+
+.sticky {
+  position: sticky;
+  top: 50px;
+  background-color: lightsalmon;
+}
+
+.outermost {
+  width: 400px;
+  position: relative;
+  padding: 20px;
+  margin: 10px;
+  border: 3px solid black;
+  background-color: bisque;
+}
+
+.innerbox1 {
+  position: relative;
+  padding: 20px;
+  margin: 10px;
+  border: 3px solid black;
+  background-color: lightblue;
+}
+
+.innerbox2 {
+  position: relative;
+  padding: 20px;
+  margin: 10px;
+  border: 3px solid black;
+  background-color: lightgreen;
+}
+
+.innerbox3 {
+  position: relative;
+  padding: 20px;
+  margin: 10px;
+  border: 3px solid black;
+  background-color: lightcoral;
+}

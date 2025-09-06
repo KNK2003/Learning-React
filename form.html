@@ -1,0 +1,40 @@
+<h2>Sign Up Form</h2>
+<form action="https://httpbin.org/get" method="GET">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required />
+  <br /><br />
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required />
+  <br /><br />
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" />
+  <br /><br />
+
+  <p>Choose your favorite food:</p>
+  <input type="radio" id="dosa" name="food" value="dosa" />
+  <label for="dosa">Dosa</label><br />
+  <input type="radio" id="idli" name="food" value="idli" />
+  <label for="idli">Idli</label><br />
+
+  <p>Select hobbies:</p>
+  <input type="checkbox" id="reading" name="hobby" value="reading" />
+  <label for="reading">Reading</label><br />
+  <input type="checkbox" id="sports" name="hobby" value="sports" />
+  <label for="sports">Sports</label><br /><br />
+
+  <label for="country">Country:</label>
+  <select id="country" name="country">
+    <option value="india">India</option>
+    <option value="usa">USA</option>
+    <option value="uk">UK</option>
+  </select>
+  <br /><br />
+
+  <label for="bio">Short Bio:</label><br />
+  <textarea id="bio" name="bio" rows="4" cols="40"></textarea>
+  <br /><br />
+
+  <button type="submit">Submit</button>
+</form>

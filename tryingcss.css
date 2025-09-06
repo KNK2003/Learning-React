@@ -1,0 +1,15 @@
+input[type="email"] {
+  background-color: lightyellow;
+}
+
+button:hover {
+  color: orange;
+}
+
+ul li:first-child {
+  font-weight: bold;
+}
+
+button::after {
+  content: " →";
+}

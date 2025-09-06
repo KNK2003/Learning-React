@@ -1,0 +1,85 @@
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  background-color: bisque;
+  height: 500px;
+  width: 300px;
+  border: 2px solid black;
+  margin-bottom: 50px;
+}
+
+.display {
+  background-color: lightblue;
+  flex: 0 0 50px;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  justify-content: flex-end;
+  align-items: center; /* centers vertically too */
+  font-weight: bold;
+  border: 1px solid navy;
+}
+
+.buttonscontainer {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  background-color: bisque;
+  padding: 10px;
+}
+
+.item {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* centers vertically too */
+  font-weight: bold;
+  border: 1px solid navy;
+  cursor: pointer;
+}
+
+.wide {
+  grid-column: span 3; /* takes 2 columns */
+}
+
+.tall {
+  grid-row: span 2; /* takes 2 rows */
+}
+
+.mainbox {
+  display: grid;
+  height: 300px;
+  width: 300px;
+  margin: 40px;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: bisque;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.box {
+  border: 1px solid black;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:nth-child(1) {
+  grid-column: 1 / 4; /* full top row */
+  grid-row: 1;
+}
+
+.box:nth-child(2) { grid-column: 1; grid-row: 2; }
+.box:nth-child(3) { grid-column: 2; grid-row: 2; }
+.box:nth-child(4) { grid-column: 1; grid-row: 3; }
+.box:nth-child(5) { grid-column: 2; grid-row: 3; }
+
+.box:nth-child(9) {
+  grid-column: 3;
+  grid-row: 2 / 4; /* spans rows 2 & 3 */
+}
+
